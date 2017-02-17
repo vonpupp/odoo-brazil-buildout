@@ -8,16 +8,16 @@ Passos para instalação do Odoo V10
 
 	mkdir projeto10
 
-2º Configurar um Virtual Env na pasta criada, 
+2º Configurar um Virtual Env na pasta criada,
 com permissão de acesso às bibliotecas do sistema:
-	
+
 	cd projeto10
-	virtualenv . --system-site-packages
+    virtualenv . --system-site-packages --python=python2
 
 
 3º Atualizar e/ou Instalar o buildout dentro da virtualenv
 
-	bin/pip install -U pip zc.buildout 
+	bin/pip install -U pip zc.buildout
 
 
 4º Criar um arquivo chamado 'common.cfg' que irá extender buildout do repositório Odoo-Brazil
@@ -31,10 +31,10 @@ com permissão de acesso às bibliotecas do sistema:
 
 5º Rodar buildout apartir da virtualenv
 
-	bin/buildout 
+	bin/buildout
 
 6º Rodar Odoo
-	
+
 	bin/start_odoo
- 
+
  7º Enjoy!
